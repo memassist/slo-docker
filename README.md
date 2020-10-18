@@ -58,7 +58,7 @@ docker-compose up -d
 docker exec -it slo bash
 ```
 
-- Navigate to the *example1* project directory:
+- From this shell, navigate to the *example1* project directory:
 ``` bash
 cd ~/examples/example1
 ```
