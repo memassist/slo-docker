@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+    slo:
+        container_name: slo
+        image: slo
+        #build: ./slo/
+        build:
+            context: ./slo/
+            dockerfile: Dockerfile
+            # build arguments:
+            args:
+                UID: 1000
+                GID: 1000
+        environment:
+            - RDLIB_MEASURE_TRUE_REUSE_DISTANCE=0
+            #- RDLIB_EXPORT_TRACE=trace.txt
+            #- RDLIB_EXPORT_TRACE_FLUSH_AFTER_EACH_ACCESS=0
+        volumes:
+            - ./examples:/home/slo/examples
+        networks:
+            - slo-network
+
+networks:
+    slo-network:
+        driver: bridge
