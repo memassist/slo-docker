@@ -77,7 +77,7 @@ The file *example1.slo.zip* is generated after *make* finishes. Open this file w
 For more information on SLO and how it works refer to:
 
 - [SLO's website](http://slo.sourceforge.net/)
-- [Principles of Analysis performed by SLO](http://slo.sourceforge.net/principles.php)
+- [Principles of analysis performed by SLO](http://slo.sourceforge.net/principles.php)
 - The documentation [ [pdf](http://slo.sourceforge.net/slo_doc.pdf) ] [ [html](http://slo.sourceforge.net/dochtml/) ] (aka The SLO Handbook)
 
 ## License
