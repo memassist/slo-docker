@@ -32,6 +32,9 @@ jobs:
         with:
           context: ./slo/
           file: ./slo/Dockerfile
+          build-args: |
+            UID=1000
+            GID=1000
           platforms: linux/386,linux/amd64,linux/arm/v7,linux/arm64/v8,linux/ppc64le
           push: true
           tags: |
