@@ -124,6 +124,8 @@ RUN wget -c ftp://ftp.gmplib.org/pub/gmp-5.1.3/gmp-5.1.3.tar.bz2 \
 # =============================================================================
 FROM base
 
+LABEL org.opencontainers.image.source="https://github.com/memassist/slo-docker"
+
 USER slo
 WORKDIR /home/slo
 
