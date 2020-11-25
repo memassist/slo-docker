@@ -39,7 +39,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            memassist/slo:latest
-            memassist/slo:1.0.0
             ghcr.io/memassist/slo:latest
             ghcr.io/memassist/slo:1.0.0
+#            memassist/slo:latest
+#            memassist/slo:1.0.0

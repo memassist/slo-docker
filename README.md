@@ -19,28 +19,26 @@ Docker and Docker Compose should be installed in your system:
 
 Then use the following steps to install GCC-SLO.
 
-### Pull the pre-built Docker image
+### Use the pre-built Docker image
 
-// TODO
+- Pull the image from the GitHub Container Registry:
+```bash
+docker pull ghcr.io/memassist/slo:latest
+```
 
 ### Build the Docker image from source
 
-- Download or clone this repository:
+Use the following steps to build the image from source instead of pulling the pre-built image.
+
+- Download or clone this repository, go into the *slo-docker* directory and build the image:
 ``` bash
 git clone git@github.com:memassist/slo-docker.git
+cd slo-docker/slo
+docker build -t ghcr.io/memassist/slo:latest --build-arg UID=1000 --build-arg GID=1000 .
+cd ..
 ```
 
-- Go into the *slo-docker* directory:
-``` bash
-cd slo-docker
-```
-
-- Build the image:
-``` bash
-docker-compose build --no-cache
-```
-
-## Usage / Getting started
+## Getting started
 
 The directory *examples/example1/* contains an example input C program taken from the
 [SLO Handbook](http://slo.sourceforge.net/dochtml/ch04s03.html) to help you get started.
@@ -48,7 +46,11 @@ The directory *examples/example1/* contains an example input C program taken fro
 is explained here: [http://slo.sourceforge.net/dochtml/ch04s03.html](http://slo.sourceforge.net/dochtml/ch04s03.html).
 Follow the instructions below to start analyzing the example program using GCC-SLO.
 
-- Make sure you are inside the *slo-docker* directory.
+- Make sure you downloaded or cloned this repository and are inside the *slo-docker* directory.
+``` bash
+git clone git@github.com:memassist/slo-docker.git
+cd slo-docker
+```
 
 - Start the *slo* Docker container:
 ``` bash
