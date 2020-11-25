@@ -1,5 +1,7 @@
 # Dockerized GCC-SLO (Suggestions for Locality Optimizations)
 
+[![build](https://github.com/memassist/slo-docker/workflows/build/badge.svg)](https://github.com/memassist/slo-docker/actions)
+
 A Dockerized version of GCC-SLO for easy installation and usage.
 
 [GCC-SLO](https://sourceforge.net/projects/slo/files/gcc-slo/) is a
@@ -17,7 +19,7 @@ Docker and Docker Compose should be installed in your system:
 
 Then use the following steps to install GCC-SLO.
 
-### Pull the pre-built Docker image from Docker Hub
+### Pull the pre-built Docker image
 
 // TODO
 
