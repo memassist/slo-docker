@@ -17,25 +17,9 @@ Docker and Docker Compose should be installed in your system:
 - Docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 - Docker Compose: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-Then use the following steps to install GCC-SLO.
-
-### Use the pre-built Docker image
-
-- Pull the image from the GitHub Container Registry:
+Then just pull the pre-built Docker image from GitHub Container Registry to install GCC-SLO:
 ```bash
 docker pull ghcr.io/memassist/slo:latest
-```
-
-### Build the Docker image from source
-
-Use the following steps to build the image from source instead of pulling the pre-built image.
-
-- Download or clone this repository, go into the *slo-docker* directory and build the image:
-``` bash
-git clone git@github.com:memassist/slo-docker.git
-cd slo-docker/slo
-docker build -t ghcr.io/memassist/slo:latest --build-arg UID=1000 --build-arg GID=1000 .
-cd ..
 ```
 
 ## Getting started
@@ -83,6 +67,18 @@ For more information on SLO and how it works refer to:
 - [SLO's website](http://slo.sourceforge.net/)
 - [Principles of analysis performed by SLO](http://slo.sourceforge.net/principles.php)
 - The documentation [ [pdf](http://slo.sourceforge.net/slo_doc.pdf) ] [ [html](http://slo.sourceforge.net/dochtml/) ] (aka The SLO Handbook)
+
+## Build the Docker image from source
+
+Use the following steps to build the image from source instead of pulling the pre-built image.
+
+- Download or clone this repository, go into the *slo-docker* directory and build the image:
+``` bash
+git clone git@github.com:memassist/slo-docker.git
+cd slo-docker/slo
+docker build -t ghcr.io/memassist/slo:latest --build-arg UID=1000 --build-arg GID=1000 .
+cd ..
+```
 
 ## License
 
