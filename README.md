@@ -1,6 +1,7 @@
 # Dockerized GCC-SLO (Suggestions for Locality Optimizations)
 
 [![build](https://github.com/memassist/slo-docker/workflows/build/badge.svg)](https://github.com/memassist/slo-docker/actions)
+[![GitHub](https://img.shields.io/github/license/memassist/slo-docker)](./LICENSE)
 
 A Dockerized version of GCC-SLO for easy installation and usage.
 
