@@ -1,9 +1,17 @@
-# Dockerized GCC-SLO (Suggestions for Locality Optimizations)
+<div align="center">
+
+# Dockerized GCC-SLO 🐳
+
+(Suggestions for Locality Optimizations)
+
+A Dockerized version of GCC-SLO for easy installation and usage.
+
+---
 
 [![build](https://github.com/memassist/slo-docker/workflows/build/badge.svg)](https://github.com/memassist/slo-docker/actions)
 [![GitHub](https://img.shields.io/github/license/memassist/slo-docker)](./LICENSE)
 
-A Dockerized version of GCC-SLO for easy installation and usage.
+</div>
 
 [GCC-SLO](https://sourceforge.net/projects/slo/files/gcc-slo/) is a
 [data locality](https://en.wikipedia.org/wiki/Locality_of_reference) profiler and
