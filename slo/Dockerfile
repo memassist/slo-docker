@@ -63,7 +63,8 @@ WORKDIR /tmp
 
 COPY --chown=slo:slo ./build-gcc-slo.sh /tmp/build-gcc-slo.sh
 
-RUN wget -c ftp://ftp.gmplib.org/pub/gmp-5.1.3/gmp-5.1.3.tar.bz2 \
+RUN wget -c https://gmplib.org/download/gmp/gmp-5.1.3.tar.bz2 \
+ #&& wget -c ftp://ftp.gmplib.org/pub/gmp-5.1.3/gmp-5.1.3.tar.bz2 \
  #&& wget -c http://www.mpfr.org/mpfr-current/mpfr-3.1.2.tar.bz2 \
  && wget -c https://www.mpfr.org/mpfr-3.1.2/mpfr-3.1.2.tar.bz2 \
  #&& wget -c http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz \
